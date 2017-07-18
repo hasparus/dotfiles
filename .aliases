@@ -1,0 +1,6 @@
+alias ls='ls -aG'
+alias grep='grep --color=auto'
+alias diff='colordiff'
+alias bashconfig='vim ~/.bashrc'
+
+alias bruunch='HARD_OBFUSCATION=false brunch w --server'
