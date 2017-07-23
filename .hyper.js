@@ -126,6 +126,7 @@ module.exports = {
     'hyperlinks',
     'hyperpunk',
     'hyper-tabs-enhanced',
+    'hyperline',
   ],
 
   // in development, you can create a directory under
