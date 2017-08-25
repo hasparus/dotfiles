@@ -3,7 +3,10 @@ alias grep='grep --color=auto'
 alias diff='colordiff'
 alias bashconfig='vim ~/.bashrc'
 alias play='afplay'
-alias bruunch='HARD_OBFUSCATION=true DEBUG=true brunch w --server'
+alias bruunch='HARD_OBFUSCATION=false LOGGY_STACKS=1 DEBUG=true brunch w -n --server'
 alias cat='ccat'
 alias tarbz2pack='tar cjvf'
 alias msngr='fb-messenger-cli'
+
+source ~/.funcs.sh
+

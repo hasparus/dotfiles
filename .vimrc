@@ -2,6 +2,11 @@ set laststatus=2
 set t_Co=256
 set nocompatible
 set backspace=2
+set tabstop=2 
+set shiftwidth=2 
+set expandtab
+set nu
+set wildmenu
 filetype off
 syntax on
-colo desert
+colo murphy
