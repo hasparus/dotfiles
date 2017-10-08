@@ -8,6 +8,6 @@ alias cat='ccat'
 alias tarbz2pack='tar cjvf'
 alias msngr='fb-messenger-cli'
 alias play='afplay'
-
+alias sml='rlwrap sml'
 source ~/.funcs.sh
 
