@@ -12,7 +12,8 @@ LP_PS1_POSTFIX="\n\[\033[38;5;119m\] ~> \[$(tput sgr0)\]"
 
 [[ $- = *i* ]] && source ~/liquidprompt/liquidprompt
 
-source '/pio/os/cuda-8.0/set-env.sh'
-source '/pio/os/anaconda/set-env.sh'
-alias jup="jupyter notebook --ip="*" --port=1337"
-
+function nn2() {
+  source '/pio/os/cuda-8.0/set-env.sh'
+  source '/pio/os/anaconda/set-env.sh'
+  alias jup="jupyter notebook --ip="*" --port=1337"
+}
