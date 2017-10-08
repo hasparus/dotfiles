@@ -22,10 +22,10 @@ function nn() {
     ssh -L 8890:localhost:8890 tryglaw -t \
     ssh -L 8890:localhost:8890 hera -t \
     ssh -L 8890:localhost:8890 lab110-02.stud.ii -t \
-    source /pio/os/cuda-8.0/set-env.sh
+    source /pio/os/cuda-8.0/set-env.sh &
+    jupyter notebook --ip="*" --port=8890
     return
   fi
 
-  ssh tryglaw -t ssh hera -t ssh lab110-02.stud.ii -t \
-  source /pio/os/cuda-8.0/set-env.sh
+  ssh tryglaw -t ssh hera -t ssh lab110-02.stud.ii
 }
