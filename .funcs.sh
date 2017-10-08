@@ -19,9 +19,9 @@ alias 'cd..'='cd_up'
 
 function nn() {
   if [ "$1" = "jupyter" ]; then
-    ssh -L 8890:localhost:8890 tryglaw -t \
-    ssh -L 8890:localhost:8890 hera -t \
-    ssh -L 8890:localhost:8890 lab110-02.stud.ii -t
+    ssh -L 1337:localhost:1337 tryglaw -t \
+    ssh -L 1337:localhost:1337 hera -t \
+    ssh -L 1337:localhost:1337 lab110-02.stud.ii -t
     return
   fi
 
