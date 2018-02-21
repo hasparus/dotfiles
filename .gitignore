@@ -6,3 +6,5 @@
 !.pathExports
 !.gitignore
 !.bashrc
+!.git-*
+!fix_vscode_antialias.js

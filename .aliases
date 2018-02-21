@@ -10,4 +10,4 @@ alias msngr='fb-messenger-cli'
 alias play='afplay'
 alias sml='rlwrap sml'
 source ~/.funcs.sh
-
+alias yolo='/Applications/Chromium.app/Contents/MacOS/Chromium --ignore-certificate-errors &> /dev/null &'
