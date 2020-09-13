@@ -1,0 +1,12 @@
+# Go
+export PATH=/usr/local/go/bin:$PATH
+export PATH=${HOME}/go/bin:$PATH
+
+# Rust
+export PATH=${HOME}/.cargo/bin:$PATH
+
+# PureScript
+export PATH=${HOME}/workspace/purescript/vendor/purescript:$PATH
+
+# Homebrew
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
