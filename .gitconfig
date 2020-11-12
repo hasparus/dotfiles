@@ -1,0 +1,45 @@
+[user]
+	email = hasparus@gmail.com
+	name = hasparus
+#	signingkey = REDACTED
+
+[alias]
+	st = status -s
+	standup = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cD) %C(bold blue)<%an>%Creset' --since='1 week ago' --author hasparus
+	lg = log --pretty=format:'%Cred%h%Creset -%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'
+	wdiff = diff --word-diff=plain
+	ignored = ls-files --others -i --exclude-standard
+	amend = !git log -n 1 --pretty=tformat:%s%n%n%b | git commit -F - --amend
+	c = commit
+	ch = checkout
+
+[core]
+	editor = code --wait
+	pager = diff-so-fancy | less --tabs=4 -RFX
+	attributesfile = ~/.gitattributes
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
+[rebase]
+	autosquash = true
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red bold
+	oldHighlight = red bold 52
+	newNormal = green bold
+	newHighlight = green bold 22
+[color "diff"]
+	meta = 11
+	frag = magenta bold
+	commit = yellow bold
+	old = red bold
+	new = green bold
+	whitespace = red reverse
+[pull]
+	ff = only
+
+[merge "json"]
+	name = github.com/jonatanpedersen/git-json-merge
+	driver = git-json-merge %A %O %B
