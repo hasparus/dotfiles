@@ -17,12 +17,16 @@
 	editor = code --wait
 	pager = diff-so-fancy | less --tabs=4 -RFX
 	attributesfile = ~/.gitattributes
+
 [commit]
 	gpgsign = true
+
 [gpg]
 	program = gpg
+
 [rebase]
 	autosquash = true
+
 [color]
 	ui = true
 [color "diff-highlight"]
@@ -37,9 +41,13 @@
 	old = red bold
 	new = green bold
 	whitespace = red reverse
+
 [pull]
 	ff = only
 
-[merge "json"]
-	name = github.com/jonatanpedersen/git-json-merge
-	driver = git-json-merge %A %O %B
+[rerere]
+	enabled = true
+
+# [merge "json"]
+	# name = github.com/jonatanpedersen/git-json-merge
+	# driver = git-json-merge %A %O %B
