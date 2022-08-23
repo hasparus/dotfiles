@@ -5,3 +5,7 @@ fi
 if ! [ -x "$(command -v zoxide)" ]; then
   curl -sS https://webinstall.dev/zoxide | bash
 fi
+
+if ! [ -x "$(command -v pnpm)" ]; then
+  curl -fsSL https://get.pnpm.io/install.sh | sh -
+fi
